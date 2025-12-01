@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vee - Kay | Contact</title>
+
+  <!-- global stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- page stylesheet -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="brand" href="index.html"><span class="brand-badge">VK</span><span class="brand-text">Vee - Kay</span></a>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="ai.html">AI in Construction</a>
+      <a href="fun.html">Fun and Relax</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap contact-wrap">
+  <section class="section">
+    <h1 class="section-title">Get in Touch</h1>
+    <p class="section-sub">
+     
+    </p>
+
+    <!-- Contact Details -->
+    <div class="contact-info">
+      <div class="contact-item">
+        <h3>Email</h3>
+        <p><a href="mailto:vk@example.com">vravisa3@asu.edu</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>LinkedIn</h3>
+        <p><a href="https://www.linkedin.com/in/vk2510" target="_blank">linkedin.com/in/vk2510</a></p>
+      </div>
+
+      <div class="contact-item">
+        <h3>Location</h3>
+        <p>Phoenix, Arizona</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="mailto:vk@example.com" method="POST" enctype="text/plain">
+      <div class="field-group">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" required placeholder="Enter your name" />
+      </div>
+
+      <div class="field-group">
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email" />
+      </div>
+
+      <div class="field-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+      </div>
+
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap"><p>© <span id="y"></span> Vee - Kay</p></div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

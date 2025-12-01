@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vee - Kay | Home</title>
+
+  <!-- global stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- shared page styles + carousel -->
+  <link rel="stylesheet" href="ai.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <span class="brand-badge">VK</span>
+        <span class="brand-text">Vee - Kay</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="ai.html">AI in Construction</a>
+        <a href="fun.html">Fun and Relax</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap ai-wrap section" style="padding-bottom:40px;">
+
+    <!-- HERO: two-column layout: left = heading (left aligned), right = headshot that stretches to match height -->
+    <section class="hero about-hero" style="display:flex;gap:20px;align-items:stretch;">
+      <!-- left: intro heading & CTAs -->
+      <div class="hero-text" style="flex:1;display:flex;flex-direction:column;justify-content:center;text-align:left;">
+        <h1 style="margin:0 0 12px; line-height:1.05;">
+          Hello, I’m <span class="accent">Vinod Krishnaa</span><br />
+          A Construction Manager, Building Smarter Infrastructure with Analytics and AI.
+        </h1>
+
+        <!-- CTA buttons kept (remove if you don't want them) -->
+        <p style="margin-top:14px;">
+          <a class="btn primary" href="projects.html">Work</a>
+          <a class="btn ghost" href="contact.html" style="margin-left:8px;">Let’s Connect</a>
+        </p>
+      </div>
+
+      <!-- right: headshot fills the height of the left column -->
+      <div class="hero-headshot" style="flex:0 0 360px; display:flex;align-items:stretch;">
+        <img
+          src="https://i.ibb.co/rKg68F9K/Professional-Headshot.jpg"
+          alt="Vinod Krishnaa (Vee - Kay) — professional headshot"
+          style="width:auto; height:100%; object-fit:cover; border-radius:8px; border:1px solid rgba(255,255,255,0.06); box-shadow: var(--shadow); display:block;"
+        />
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS carousel (sourced from AI Projects) -->
+    <section aria-labelledby="featured-projects" class="section" style="margin-top:28px;">
+      <h2 id="featured-projects" class="section-title">Featured Projects</h2>
+      <p class="section-sub">Selected projects from the AI in Construction page — click any card to open the resource.</p>
+
+      <div class="cards-carousel" id="home-projects-carousel" aria-label="Featured projects">
+        <button class="ctrl prev" aria-label="Previous projects">‹</button>
+
+        <div class="cards-wrapper" tabindex="0" role="region" aria-roledescription="carousel">
+          <div class="cards-track" role="list">
+
+            <!-- RFP Proposal Assistant -->
+            <div class="cards-slide" role="listitem">
+              <article class="card">
+                <a class="media" target="_blank" rel="noopener"
+                   href="https://chat.openai.com/g/g-68ef3f93c9548191b1437da17ec1f470-proposal-assistant">
+                  <img loading="lazy" alt="RFP Proposal Assistant" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1400&auto=format&fit=crop">
+                </a>
+                <div class="body">
+                  <h3 class="card-title">RFP Proposal Assistant</h3>
+                  <p class="card-desc">Assistant to help craft RFP responses, proposals, and submission checklists.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- ADOT bid analyst -->
+            <div class="cards-slide" role="listitem">
+              <article class="card">
+                <a class="media" target="_blank" rel="noopener"
+                   href="https://chat.openai.com/g/g-68be1eb88a1c8191b30eee064cde3515-adot-bid-analyst">
+                  <img loading="lazy" alt="ADOT bid analyst" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1400&auto=format&fit=crop">
+                </a>
+                <div class="body">
+                  <h3 class="card-title">ADOT bid analyst</h3>
+                  <p class="card-desc">Assistant to analyze bids and prepare compliant responses for ADOT projects.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- AI Dashboard -->
+            <div class="cards-slide" role="listitem">
+              <article class="card">
+                <a class="media" target="_blank" rel="noopener"
+                   href="https://docs.google.com/spreadsheets/d/1TM9AJQMgZrUEsL7vJXg8wtmDVJP_bK1wh4s7uAG-JkQ/edit?gid=736605502#gid=736605502">
+                  <img loading="lazy" alt="AI Dashboard" src="https://i.ibb.co/sp0zd5kS/dashboard.jpg">
+                </a>
+                <div class="body">
+                  <h3 class="card-title">AI Dashboard</h3>
+                  <p class="card-desc">Auto-generated work-order reports with weather & email distribution.</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Evaluating Different LLM -->
+            <div class="cards-slide" role="listitem">
+              <article class="card">
+                <a class="media" target="_blank" rel="noopener"
+                   href="https://drive.google.com/file/d/1yEfyQyNYzI7uoUiG7vF7GdH6HCGEXCYA/view?usp=sharing">
+                  <img loading="lazy" alt="Evaluating Different LLM" src="https://i.ibb.co/rKm9JSLs/evlua.jpg">
+                </a>
+                <div class="body">
+                  <h3 class="card-title">Evaluating Different LLM</h3>
+                  <p class="card-desc">Comparative analysis of multiple LLMs — report (Drive).</p>
+                </div>
+              </article>
+            </div>
+
+          </div>
+        </div>
+
+        <button class="ctrl next" aria-label="Next projects">›</button>
+      </div>
+
+    
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>© <span id="y"></span> Vee - Kay</p>
+      <nav class="nav-links">
+        <a href="index.html">Top</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>  <!-- your global script -->
+  <script src="ai.js"></script>       <!-- carousel logic -->
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

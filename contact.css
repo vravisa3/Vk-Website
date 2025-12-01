@@ -1,0 +1,110 @@
+/* Contact page styles — neat, organized, 1 cm from left */
+
+.contact-wrap {
+  padding-left: 1cm;
+  padding-right: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 0 .4rem;
+  font-weight: 800;
+  color: #fff;
+  font-size: clamp(2rem, 3vw + 1rem, 3.2rem);
+  text-shadow: 0 0 18px rgba(124,249,255,0.18);
+}
+
+.section-sub {
+  font-family: "Californian FB", "Garamond", serif;
+  font-size: 18px;
+  color: var(--muted);
+  margin: .5rem 0 2rem;
+  max-width: 70ch;
+}
+
+/* Contact info tiles */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.contact-item {
+  background: rgba(255,255,255,0.03);
+  padding: 16px 18px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  flex: 1 1 260px;
+  backdrop-filter: blur(4px);
+}
+
+.contact-item h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.contact-item p a {
+  color: var(--accent);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field-group label {
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.field-group input,
+.field-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.field-group input:focus,
+.field-group textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+.contact-btn {
+  background: linear-gradient(90deg,#1fb8a7,#3bb0ff);
+  color: #021018;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5);
+  transition: 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(2,6,23,0.6);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contact-info {
+    flex-direction: column;
+  }
+}
