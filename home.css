@@ -1,0 +1,104 @@
+/* home.css — Featured Projects carousel + page tweaks
+   Preserves 1cm left gap and About-heading styles */
+
+.ai-wrap {
+  padding-left: 1cm;
+  padding-right: 18px;
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+/* hero */
+.hero { margin: 2.4rem 0 1.6rem; }
+.hero-title { font-size: clamp(2.4rem, 4vw, 4rem); margin:0; font-weight:900; color:var(--ink); }
+.hero-sub { margin:.6rem 0 0; color:var(--muted); font-size:1.05rem; }
+
+/* Heading style matching About Me */
+.section-title {
+  margin: 0 0 .4rem;
+  font-weight: 800;
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw + 1rem, 2.6rem);
+  letter-spacing: .02em;
+  text-shadow: 0 0 12px rgba(124,249,255,.14);
+  text-align: left;
+}
+.section-sub {
+  font-family: "Californian FB", "Garamond", serif;
+  font-size: 16px;
+  color: var(--muted);
+  margin: .2rem 0 1rem;
+  max-width: 70ch;
+}
+
+/* Carousel wrapper */
+.cards-carousel { position: relative; margin-top: 1rem; z-index:1; }
+.cards-wrapper { overflow: hidden; outline: none; }
+.cards-track {
+  display:flex;
+  gap:16px;
+  transition: transform 420ms cubic-bezier(.2,.9,.2,1);
+  will-change: transform;
+  padding-bottom:6px;
+  z-index:2;
+}
+
+/* slides: 3-up default */
+.cards-slide { flex: 0 0 calc((100% - 32px)/3); max-width: calc((100% - 32px)/3); box-sizing: border-box; }
+
+/* card visuals */
+.card { background: var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; display:flex; flex-direction:column; height:100%; box-shadow: var(--shadow); }
+.media img { width:100%; height:200px; object-fit:cover; display:block; }
+.body { padding:12px; display:flex; flex-direction:column; gap:.4rem; }
+.card-title { margin:0; font-size:1.05rem; font-weight:700; color:var(--ink); }
+.card-desc { margin:0; color:var(--muted); font-size:.92rem; }
+
+/* controls */
+.ctrl {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border-radius:10px;
+  padding:.5rem .7rem;
+  background: rgba(15,19,24,0.95);
+  border:1px solid rgba(255,255,255,0.06);
+  cursor:pointer;
+  color:var(--ink);
+  font-size:1.2rem;
+  width:44px;
+  height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  z-index:40;
+  backdrop-filter: blur(4px);
+}
+.prev { left:8px; }
+.next { right:8px; }
+.ctrl[disabled] { opacity:.35; cursor: default; pointer-events: auto; }
+
+/* responsive */
+@media (max-width:980px) {
+  .cards-slide { flex: 0 0 calc((100% - 16px)/2); max-width: calc((100% - 16px)/2); }
+  .media img { height:170px; }
+  .ctrl { width:40px; height:40px; font-size:1.05rem; }
+}
+@media (max-width:620px) {
+  .cards-slide { flex: 0 0 100%; max-width:100%; }
+  .media img { height:240px; }
+  .prev { left:6px; }
+  .next { right:6px; }
+  .ctrl { width:38px; height:38px; }
+}
+
+/* CTA button */
+.button {
+  display:inline-block;
+  padding:.6rem .9rem;
+  border-radius:10px;
+  background:linear-gradient(90deg,#1fb8a7,#3bb0ff);
+  color:#021018;
+  font-weight:700;
+  text-decoration:none;
+  margin-top:10px;
+}
